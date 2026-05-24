@@ -17,8 +17,10 @@ Agent Skill for reviewing FFXIV FA/TP C# trigger scripts against the bundled FA 
 
 ```powershell
 git clone https://github.com/Haiya949/fa-review-skill.git "$env:USERPROFILE\.codex\skills\fa-review"
+```
 
 ### Claude Code
 
 ```powershell
 git clone https://github.com/Haiya949/fa-review-skill.git "$env:USERPROFILE\.claude\skills\fa-review"
+```
