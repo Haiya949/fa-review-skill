@@ -1,6 +1,8 @@
 # fa-review
 
-Codex skill for reviewing FFXIV FA/TP C# trigger scripts against the bundled FA writing standard.
+用于审查 FFXIV FA/TP C# 触发器脚本的 Agent Skill，按仓库内置的 FA 脚本编写标准检查 `RemoteControl`、`DebugPoint`、`CondParams`、`ScriptEnv.KV` 等规则。
+
+Agent Skill for reviewing FFXIV FA/TP C# trigger scripts against the bundled FA writing standard.
 
 ## Contents
 
@@ -9,16 +11,14 @@ Codex skill for reviewing FFXIV FA/TP C# trigger scripts against the bundled FA 
 - `references/fa-script-standard.md`: compatibility mirror of the same standard.
 - `agents/openai.yaml`: optional Codex UI metadata.
 
-## Install
+## 安装 / Install
 
-Clone this repository directly into your Codex skills directory:
+### Codex
 
 ```powershell
-git clone <repo-url> "$env:USERPROFILE\.codex\skills\fa-review"
-```
+git clone https://github.com/Haiya949/fa-review-skill.git "$env:USERPROFILE\.codex\skills\fa-review"
 
-Then ask Codex to use `$fa-review` when reviewing FA/TP scripts.
+### Claude Code
 
-## Notes
-
-The skill expects scripts to follow the bundled standard for `RemoteControl`, `DebugPoint`, `CondParams`, `ScriptEnv.KV`, namespace/class naming, UTF-8 reading, and no fallback/static/party-list logic.
+```powershell
+git clone https://github.com/Haiya949/fa-review-skill.git "$env:USERPROFILE\.claude\skills\fa-review"
