@@ -1,0 +1,4 @@
+interface:
+  display_name: "FA 审查"
+  short_description: "Review FA and TP scripts against the local ACR standard"
+  default_prompt: "Use $fa-review to review this FA/TP script against the local writing standard."
